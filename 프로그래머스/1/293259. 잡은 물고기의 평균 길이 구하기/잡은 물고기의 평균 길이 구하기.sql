@@ -1,0 +1,7 @@
+-- 코드를 작성해주세요
+# IFNULL alias 붙여주기
+SELECT ROUND(AVG(LENGTH),2) AS AVERAGE_LENGTH
+FROM (
+    SELECT IFNULL(LENGTH, 10) AS LENGTH
+    FROM FISH_INFO
+)as tb_case

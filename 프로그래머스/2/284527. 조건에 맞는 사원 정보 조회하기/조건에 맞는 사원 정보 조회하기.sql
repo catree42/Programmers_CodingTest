@@ -8,7 +8,3 @@ FROM (
     LIMIT 1
     ) AS g
 JOIN HR_EMPLOYEES AS e ON e.EMP_NO = g.EMP_NO;
-
-    
-
-
